@@ -21,11 +21,18 @@ function mean(arr) {
 }
 
 function odds(arr) {
-
+  return arr
+    .filter(function(x) {
+      return x % 2 === 1
+    })
+    .join('-')
 }
 
 function evens(arr) {
-
+  return arr.filter(function(x) {
+    return x % 2 === 0
+  })
+  .join('-')
 }
 
 function numberProcessing(arr) {

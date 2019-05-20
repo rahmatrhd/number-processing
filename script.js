@@ -1,7 +1,9 @@
 function min(arr) {
-  var x = arr.sort()
-  return x[0]
-  // return arr.sort()[0]
+  // 1. sort ascending -> get first item
+  // 2. Math.min()
+  // 3. Array.reduce()
+  
+  return Math.min(...arr)
 }
 
 function max(arr) {
@@ -24,5 +26,5 @@ function numberProcessing(arr) {
   return 'Min: ' + min(arr) + ', Max: ' + max(arr) + ', Mean: ' + mean(arr) + ', Odds: ' + odds(arr) + ', Evens: ' + evens(arr)
 }
 
-console.log(numberProcessing([1, 3, 5, 1, 2, 8, 10, 1, 3]))
+console.log(numberProcessing([-9, 3, 5, 1, 2, 8, 10, 1, 3]))
 // "Min: 0, Max: 10, Mean: 4, Odds: 1-3-5-1-3, Evens: 2-8-10-0"

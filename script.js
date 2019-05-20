@@ -7,7 +7,9 @@ function min(arr) {
 }
 
 function max(arr) {
-
+  return arr.reduce(function(x, y) {
+    return (x > y) ? x : y
+  })
 }
 
 function mean(arr) {

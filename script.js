@@ -13,7 +13,11 @@ function max(arr) {
 }
 
 function mean(arr) {
+  var total = arr.reduce(function(x, y) {
+    return x + y
+  })
 
+  return Math.round(total / arr.length)
 }
 
 function odds(arr) {
